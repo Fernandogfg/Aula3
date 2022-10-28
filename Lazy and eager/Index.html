@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 07</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      grid-gap: 400px;
+    }
+  </style>
+  <body>
+    <img
+      src="assets/images/gatinhos.jpg"
+      alt="Cesta com gatinhos"
+      title="Adote aqui seu gatinho"
+      loading="lazy"
+    />
+    <hr />
+    <!-- <div
+      style="background-image: url('assets/images/gatinhos.jpg'); height: 300px"
+    ></div> -->
+    <figure>
+      <img
+        src="assets/images/gatinhos.jpg"
+        alt="gatinhos em cesta"
+        title="gatinhos na cesta"
+        loading="lazy"
+      />
+      <figcaption>cesta com gatinhos</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/01-320w.jpg 320w,
+          assets/images/01-480w.jpg 480w,
+          assets/images/01-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Flor laranja"
+        title="Flor Laranja"
+        loading="lazy"
+      />
+      <figcaption>Flor laranja</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/02-320w.jpg 320w,
+          assets/images/02-480w.jpg 480w,
+          assets/images/02-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="arara voando"
+        title="Arara vermelha"
+        loading="lazy"
+      />
+      <figcaption>Arara vermelha voando</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/03-320w.jpg 320w,
+          assets/images/03-480w.jpg 480w,
+          assets/images/03-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Imagem abstrata da lua derretendo"
+        title="Lua derretendo"
+        loading="lazy"
+      />
+      <figcaption>Lua derretendo e virando lava</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/04-320w.jpg 320w,
+          assets/images/04-480w.jpg 480w,
+          assets/images/04-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="ponte para o mar"
+        title="ponte para o mar"
+        loading="lazy"
+      />
+      <figcaption>Ponte para o mar</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/05-320w.jpg 320w,
+          assets/images/05-480w.jpg 480w,
+          assets/images/05-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="esfera de vidro"
+        title="esfera de vidro"
+        loading="lazy"
+      />
+      <figcaption>Esfera de vidro</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/06-320w.jpg 320w,
+          assets/images/06-480w.jpg 480w,
+          assets/images/06-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Filtro de sonhos"
+        title="Filtro de sonhos"
+        loading="lazy"
+      />
+      <figcaption>Filtro de sonhos</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/07-320w.jpg 320w,
+          assets/images/07-480w.jpg 480w,
+          assets/images/07-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Triangulo de neon"
+        title="Triangulo de neon"
+        loading="lazy"
+      />
+      <figcaption>Triangulo de neon</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/08-320w.jpg 320w,
+          assets/images/08-480w.jpg 480w,
+          assets/images/08-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Sol iluminando os olhos"
+        title="Sol iluminando os olhos"
+        loading="lazy"
+      />
+      <figcaption>Sol iluminando os olhos</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/09-320w.jpg 320w,
+          assets/images/09-480w.jpg 480w,
+          assets/images/09-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Homem com pernas de árvore"
+        title="Homem com pernas de árvore"
+        loading="lazy"
+      />
+      <figcaption>Homem com pernas de árvore</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/10-320w.jpg 320w,
+          assets/images/10-480w.jpg 480w,
+          assets/images/10-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Mãos fazendo um coração com o sol dentro"
+        title="Mãos fazendo um coração com o sol dentro"
+        loading="lazy"
+      />
+      <figcaption>Mãos fazendo um coração com o sol dentro</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/11-320w.jpg 320w,
+          assets/images/11-480w.jpg 480w,
+          assets/images/11-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Yoga no meio do campo"
+        title="Yoga no meio do campo"
+        loading="lazy"
+      />
+      <figcaption>Yoga no meio do campo</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/12-320w.jpg 320w,
+          assets/images/12-480w.jpg 480w,
+          assets/images/12-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Lâmpada na chuva"
+        title="Lâmpada na chuva"
+        loading="lazy"
+      />
+      <figcaption>Lâmpada na chuva</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/13-320w.jpg 320w,
+          assets/images/13-480w.jpg 480w,
+          assets/images/13-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Luzes de natal com livro"
+        title="Luzes de natal com livro"
+        loading="lazy"
+      />
+      <figcaption>Luzes de natal com livro</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/14-320w.jpg 320w,
+          assets/images/14-480w.jpg 480w,
+          assets/images/14-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Olho com a bandeira do Brasil"
+        title="Olho com a bandeira do Brasil"
+        loading="lazy"
+      />
+      <figcaption>Olho com a bandeira do Brasil</figcaption>
+    </figure>
+    <figure>
+      <img
+        srcset="
+          assets/images/15-320w.jpg 320w,
+          assets/images/15-480w.jpg 480w,
+          assets/images/15-800w.jpg 800w
+        "
+        sizes="(max-width: 320px) 320px, (max-width: 479px) 480px, (max-width: 779px) 800px"
+        alt="Lobisomem Pidão"
+        title="Lobisomem Pidão"
+        loading="lazy"
+      />
+      <figcaption>Lobisomem Pidão</figcaption>
+    </figure>
+  </body>
+</html>
