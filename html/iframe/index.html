@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe</title>
+  </head>
+  <video
+    preload="auto"
+    muted
+    width="480"
+    controls
+    poster="assets/images/gatinhos.jpg"
+    src="assets/movies/p.a.w.radkey-vans.mp4"
+  >
+    <p>Este video é imcompativel com seu navegador</p>
+    <track
+      src="assets/sub/apresentacao_en.vtt"
+      srclang="en"
+      kind="subtitles"
+      label="English"
+      default
+    />
+  </video>
+  <body>
+    <iframe
+      height="3250px"
+      width="100%"
+      src="frame.html"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
