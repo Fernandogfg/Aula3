@@ -1,0 +1,2 @@
+arrumar altura da tabela do main
+centralizar nome com a foto
