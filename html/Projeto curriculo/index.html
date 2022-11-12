@@ -7,8 +7,8 @@
     <title>Curriculo</title>
   </head>
   <body>
-    <section>
-      <header>
+    <header>
+      <section>
         <nav>
           <table width="100%" border="0">
             <thead align="center">
@@ -43,10 +43,10 @@
             </thead>
           </table>
         </nav>
-      </header>
-    </section>
+      </section>
+    </header>
     <main>
-      <table width="100%" border="1">
+      <table width="100%" border="0">
         <section id="dados">
           <thead bgcolor="#F0F8FF">
             <tr>
@@ -55,7 +55,7 @@
                 <p>Telefone: 56465-3445</p>
                 <p>E-mail: MeuEmail@email.com</p>
               </td>
-              <th align="right" width="500px"><img width="500" src="assets/images/download.jpg" alt="foto Fernando" /></th>
+              <th align="right" width="33%"><img width="100%" src="assets/images/download.jpg" alt="foto Fernando" title="foto" /></th>
             </tr>
             <tr></tr>
           </thead>
@@ -75,11 +75,12 @@
               </section>
             </td>
             <td bgcolor="#F0F8FF" rowspan="4" valign="top">
+              <h2>Skills</h2>
               <ul>
-                <h2>Skills</h2>
-                <li>dormir</li>
-                <li>comer</li>
-                <li>reclamar</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
               </ul>
             </td>
           </tr>
@@ -170,7 +171,9 @@
           </tr>
         </tbody>
       </table>
-      <table width="100%" border="1">
+    </main>
+    <footer>
+      <table width="100%" border="0">
         <tfoot>
           <tr>
             <form action="https://www.w3schools.com/action_page.php" method="post">
@@ -185,12 +188,22 @@
                 <br /><br />
                 <label for="tel">Telefone</label><br />
                 <input size="100px" type="tel" placeholder="123456-7890" name="tel" id="tel" /><br /><br />
+                <input type="submit" />
+                <br /><br /><br /><br />
               </td>
-              <td width="50%"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+              <td width="50%">
+                <label for="contato">Sua mensagem (Até 300 caracteres)</label><br /><textarea
+                  name="contato"
+                  id="contato"
+                  cols="70"
+                  rows="10"
+                  placeholder="Qual o motivo do seu contato?"
+                ></textarea>
+              </td>
             </form>
           </tr>
         </tfoot>
       </table>
-    </main>
+    </footer>
   </body>
 </html>
