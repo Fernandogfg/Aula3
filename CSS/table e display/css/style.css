@@ -1,0 +1,54 @@
+.tabela {
+   display: table;
+}
+.coluna {
+   border: solid 1px black;
+   padding: 10px;
+   display: table-cell;
+}
+.linha {
+   display: table-row;
+}
+.linha:nth-child(odd) {
+   background-color: #00000044;
+}
+/* ATIVIDADE 2
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+main {
+   height: 200vh;
+}
+nav {
+   position: sticky;
+   top: 0px;
+   margin-top: 20px;
+   background: blue;
+}
+nav > ul > li {
+   display: inline;
+   color: #fff;
+} */
+
+/* ATIVIDADE 3
+
+#box1 {
+   background-color: blue;
+   width: 200px;
+   height: 200px;
+   color: white;
+   text-align: center;
+   font-size: 30px;
+   float: left;
+}
+#box2 {
+   background-color: red;
+   width: 200px;
+   height: 200px;
+   color: white;
+   text-align: center;
+   font-size: 30px;
+   float: right;
+} */
