@@ -1,0 +1,32 @@
+body {
+   display: grid;
+   grid-template-columns: 15vw 70vw 15vw;
+   grid-template-rows: 25vh 50vh 25vh;
+   margin: 0;
+   text-align: center;
+}
+
+header {
+   background-color: orange;
+   grid-column: span 3;
+}
+
+nav {
+   background-color: green;
+   grid-column: span 15vw;
+}
+
+main {
+   background-color: yellow;
+   grid-column: span 70vw;
+}
+
+aside {
+   background-color: blue;
+   grid-column: span 15vw;
+}
+
+footer {
+   background-color: red;
+   grid-column: span 3;
+}
