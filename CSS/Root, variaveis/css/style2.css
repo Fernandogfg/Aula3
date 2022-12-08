@@ -1,0 +1,21 @@
+body {
+   box-sizing: border-box;
+   width: 100vw;
+   height: 100vh;
+   background-color: black;
+   background-image: url(https://bemach1.com.br/wp-content/uploads/2022/09/Logo-Mach.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 50%;
+   position: relative;
+   box-sizing: border-box;
+}
+div.panel {
+   width: 300px;
+   height: 300px;
+   background-color: rgba(0, 0, 0, 0.9);
+   box-shadow: 0 0 50px blue;
+   margin-top: 200px;
+   position: absolute;
+   right: calc(50vw - 150px);
+}

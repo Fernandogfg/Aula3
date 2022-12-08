@@ -13,17 +13,17 @@ header {
 
 nav {
    background-color: green;
-   grid-column: span 15vw;
+   /* grid-column: span 15vw; */
 }
 
 main {
    background-color: yellow;
-   grid-column: span 70vw;
+   /* grid-column: span 70vw; */
 }
 
 aside {
    background-color: blue;
-   grid-column: span 15vw;
+   /* grid-column: span 15vw; */
 }
 
 footer {
