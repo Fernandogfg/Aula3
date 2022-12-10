@@ -1,0 +1,27 @@
+:root {
+   --cor-fonte: #a0a0a0;
+   --cor-borda: #a0a0a0;
+   --cor-disable: #e0e0e0;
+}
+.cadastro {
+   width: 300px;
+}
+form {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+}
+input {
+   padding: 10px 20px;
+   border: 1px solid black;
+}
+input[disabled] {
+   background-color: var(--cor-disable);
+}
+input[readonly] {
+   border: solid 1px var(--cor-fonte);
+   color: var(--cor-fonte);
+}
+input:required {
+   border-color: red;
+}

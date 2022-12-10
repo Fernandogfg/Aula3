@@ -1,0 +1,17 @@
+.tabela {
+   display: table;
+}
+.row {
+   display: table-row;
+}
+.row div {
+   display: table-cell;
+   border: 1px solid black;
+   padding: 10px;
+}
+.row:nth-child(odd) {
+   background-color: rgb(146, 146, 146);
+}
+.row:first-of-type {
+   background-color: blue;
+}
