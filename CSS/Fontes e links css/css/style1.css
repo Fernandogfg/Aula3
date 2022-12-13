@@ -1,0 +1,26 @@
+@import url(fontes.css);
+
+.titulo1 {
+   font-family: "Dancing Script", cursive;
+   font-size: 25px;
+}
+
+.titulo2 {
+   font-family: "Raleway", sans-serif;
+   font-style: italic;
+   font-size: 30px;
+}
+
+.titulo3 {
+   font-family: "Pacifico", cursive;
+   font-size: 38px;
+}
+.titulo4 {
+   font-family: "Fascinate Inline", cursive;
+   font-size: 20px;
+}
+
+.titulo5 {
+   font-family: "Roboto", sans-serif;
+   font-size: 45px;
+}
