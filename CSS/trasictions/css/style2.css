@@ -1,0 +1,36 @@
+.informacoes div {
+   transition-duration: 0.2s;
+   transition-delay: 0.2s;
+   transition-timing-function: ease-in-out;
+}
+.informacoes {
+   background-color: yellow;
+   border-radius: 50%;
+   height: 200px;
+   width: 200px;
+   padding-left: 22px;
+   padding-top: 10px;
+   color: yellow;
+   /* transition: border-radius 1s, width 1s;
+    */
+   transition-duration: 0.8s, 0.8s;
+   transition-delay: 0.2s, 0.4s;
+   transition-property: border-radius, width;
+   transition-timing-function: ease;
+}
+.informacoes:hover div {
+   border-radius: 0;
+   transition-duration: 0.4s;
+   transition-delay: 1s;
+   color: black;
+   transition-timing-function: ease-in;
+   transition-duration: 0.4s;
+   transition-delay: 1s;
+}
+.informacoes:hover {
+   /* color: black; */
+   /* transition-duration: 1s; */
+   /* transition-delay: 1s; */
+   width: 400px;
+   border-radius: 20px;
+}

@@ -1,0 +1,26 @@
+button {
+   padding: 5px;
+   color: #fff;
+   background-color: #0f0c33;
+}
+@keyframes rotacao {
+   0% {
+      transform: rotateZ(0);
+   }
+   25% {
+      transform: rotateZ(15deg);
+   }
+   /* 50% {
+      transform: rotateZ(0deg);
+   } */
+   75% {
+      transform: rotateZ(-10deg);
+   }
+   100% {
+      transform: rotateZ(0deg);
+   }
+}
+.main_button:hover {
+   animation: rotacao;
+   animation-duration: 0.5s;
+}
