@@ -1,0 +1,13 @@
+.titulo {
+   background-color: bisque;
+}
+div {
+   height: 500px;
+}
+.colunas {
+   column-width: 300px;
+   column-rule: 3px dotted aqua;
+}
+.colunas .titulo {
+   column-span: all;
+}
