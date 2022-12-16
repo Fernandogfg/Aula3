@@ -1,0 +1,18 @@
+.panel {
+   display: flex;
+   width: 50px;
+   height: 300px;
+   border: 1px solid black;
+   flex-direction: column;
+   gap: 3px;
+}
+.elemento {
+   flex-grow: 2;
+   background-color: grey;
+}
+.elemento.maior {
+   flex-grow: 5;
+}
+.elemento.menor {
+   flex-grow: 1;
+}

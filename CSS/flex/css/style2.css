@@ -1,0 +1,29 @@
+.panel {
+   width: 550px;
+   height: 100px;
+   border: 1px solid;
+   display: flex;
+   justify-content: space-evenly;
+   /* porque não da para usar space arround ? */
+}
+.elemento {
+   border: 0px solid;
+   height: 50px;
+   width: 50px;
+}
+.elemento.alternate {
+   background-color: blue;
+   align-self: flex-end;
+}
+.elemento {
+   background-color: gray;
+   align-self: flex-start;
+}
+.elemento:first-child {
+   background-color: red;
+   align-self: center;
+}
+.elemento:last-child {
+   background-color: red;
+   align-self: center;
+}
