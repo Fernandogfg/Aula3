@@ -1,0 +1,30 @@
+@import url(grid.css);
+.header {
+   height: 5vh;
+   background-color: aquamarine;
+}
+.footer {
+   height: 5vh;
+   background-color: greenyellow;
+}
+.main {
+   background-color: blueviolet;
+   padding: 15px;
+}
+.aside {
+   background-color: darkred;
+   padding: 15px;
+}
+
+.card {
+   height: 30vh;
+   background-color: white;
+}
+.hide {
+   height: 30vh;
+}
+@media screen and (max-width: 991px) {
+   .hide {
+      display: none;
+   }
+}
