@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>aula 4 - js</title>
+      <script>
+         let letra = prompt("Digite uma letra do alfabeto");
+         letra = letra.toLowerCase();
+         if (isNaN(letra)) {
+            if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
+               alert("é uma vogal");
+            } else {
+               alert("é uma consoante");
+            }
+         } else {
+            alert("Deve digitar uma letra do alfabeto para obter o resultado");
+         }
+      </script>
+   </head>
+   <body></body>
+</html>
