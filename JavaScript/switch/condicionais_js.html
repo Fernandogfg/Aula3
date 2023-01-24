@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>condicionais</title>
+   </head>
+   <body>
+      <script>
+         let animal = prompt("qual a especie do seu animal ?");
+         animal = animal.toLowerCase();
+         switch (animal) {
+            case "cachorro":
+            case "gato":
+            case "coelho":
+               alert("banho, tosa, ração");
+               break;
+            case "cavalo":
+            case "cabra":
+            case "jumento":
+               alert("Você será encaminhado para um veterinario especializado, podemos oferecer apenas ração.");
+               break;
+            case "rato":
+               alert("Oferecemos uma gaiola especial 🫰 e ração.");
+               break;
+            case "passarinho":
+               alert("Oferecemos um serviço de implante de rastreador e ração.");
+               break;
+            default:
+               alert("infelizmente, não podemos te atender.");
+         }
+      </script>
+   </body>
+</html>
