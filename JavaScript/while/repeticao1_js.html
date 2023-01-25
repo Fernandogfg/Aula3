@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>repetição</title>
+   </head>
+   <body>
+      <script>
+         let anos = Number(prompt("quantos anos o piloto esta vinculado a escola ?"));
+         let reciclagem = 0;
+
+         if (isNaN(anos)) {
+            alert("Por favor digite um numero!");
+         } else if (anos < 2) {
+            alert("você não tem o tempo mínimo de 2 anos para ter uma reciclagem");
+         } else {
+            while (anos >= 2) {
+               reciclagem++;
+               anos -= 2;
+            }
+            alert(`você ja passou por ${reciclagem} recliclagens`);
+         }
+      </script>
+   </body>
+</html>
