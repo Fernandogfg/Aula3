@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>for, split</title>
+   </head>
+   <body>
+      <script>
+         let pilotos = prompt("digite o nome dos pilotos em ordem de chegada, separados por um virgula (ex: piloto1,piloto2 ...)");
+         let arPilotos = pilotos.split(",");
+         let resposta = "";
+         let i = 0;
+         if (arPilotos == "") {
+            alert("porfavor digite um nome!");
+         } else {
+            for (let nome of arPilotos) {
+               i++;
+               if (i <= 3) {
+                  resposta = resposta + `Pódio - ${nome} - ${i}\n`;
+               } else {
+                  resposta = resposta + `${nome} - ${i}\n`;
+               }
+            }
+            alert(resposta);
+         }
+         /* LOGICA FALHA!!!
+
+         for (let nome of arPilotos) {
+            i++;
+            if (arPilotos == "") {
+               alert("porfavor digite um nome!");
+            } else {
+               if (i <= 3) {
+                  resposta = resposta + `Pódio - ${nome} - ${i}\n`;
+               } else {
+                  resposta = resposta + `${nome} - ${i}\n`;
+               }
+            }
+         }
+         */
+         /* LOGICA SEM OS REQUISITOS
+         for (let i = 0; i < arPilotos.length; i++) {
+            if (i <= 3) {
+               console.log(`Pódio - ${i} - ${arPilotos[i]}`);
+            } else {
+               console.log(`${i} - ${arPilotos[i]}`);
+            }
+         }
+         */
+      </script>
+   </body>
+</html>
