@@ -6,17 +6,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>aula 1 - js intermediario</title>
       <script>
-         let itens = ['Sem cadastro','Leite', 'Ovo', 'farinha', 'milho', 'café']
-         let codigo = Number(prompt('informe o codigo do produto'));
+         let itens = ['Sem cadastro','Leite', 'Ovo', 'Farinha', 'Milho', 'Café']
+         let codigo = Number(prompt('Informe o codigo do produto'));
          let contador = 0;
          for(let produto of itens){
             if (contador == codigo){
-               alert(`Usiario digitou ${codigo}, ${produto}`)
+               alert(`Usuário digitou ${codigo}, ${produto}`)
             }
             contador++
          }
          if(itens[codigo] === undefined){
-            let produtoNovo= prompt(`${itens[0]}, deseja adicionar o produto ? caso sim, digite o nome do produto, caso não clique em "Cancelar"`)
+            let produtoNovo= prompt(`${itens[0]}, deseja adicionar o produto ? caso sim, digite o nome do produto, caso não, clique em "Cancelar"`)
             if(produtoNovo !== null){
                itens.push(produtoNovo);
                alert(`Produto incluído com sucesso: ${itens.length-1} - ${produtoNovo}`);
