@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>aula 2 - js intermediario</title>
+      <script>
+      let documento = prompt('Digite seu CPF(apenas numeros');
+      
+      function validacao(cpf){
+         if(cpf.length == 11){
+            return true;
+         }else {
+            return false;
+         }
+      }
+      function formatacao (text){
+         
+         let format1 = text.slice(0, 3,) + '.'
+         let format2 = text.slice(3, 6,) + '.'
+         let format3 = text.slice(6,9) + '-'
+         let format4 = text.slice(9)
+         text = format1 + format2 + format3 + format4;
+         return text;
+      }
+      if(validacao(documento)){
+         alert(formatacao(documento))
+      }else (alert('digite um cpf valido'))
+      
+      
+      </script>
+   </head>
+   <body></body>
+</html>
