@@ -9,24 +9,30 @@
       let documento = prompt('Digite seu CPF(apenas numeros');
       
       function validacao(cpf){
-         if(cpf.length == 11){
+         if(cpf.length == 11 && !isNaN(cpf)){
             return true;
          }else {
             return false;
          }
       }
-      function formatacao (text){
+      function formatacao (cpf){
          
-         let format1 = text.slice(0, 3,) + '.'
-         let format2 = text.slice(3, 6,) + '.'
-         let format3 = text.slice(6,9) + '-'
-         let format4 = text.slice(9)
-         text = format1 + format2 + format3 + format4;
-         return text;
+         let format1 = cpf.slice(0, 3) + '.'
+         let format2 = cpf.slice(3, 6) + '.'
+         let format3 = cpf.slice(6, 9) + '-'
+         let format4 = cpf.slice(9)
+         cpf = format1 + format2 + format3 + format4;
+         return cpf;
       }
-      if(validacao(documento)){
-         alert(formatacao(documento))
-      }else (alert('digite um cpf valido'))
+      function exibeCPF(cpf){
+         if(validacao(cpf)){
+         alert(formatacao(cpf))
+         }else {
+            alert('digite um cpf valido');
+         }
+   }
+   exibeCPF(documento)
+      
       
       
       </script>
