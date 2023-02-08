@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções 2 - js intermediario</title>
+    <script>
+      // let listaCPF = [
+      //   prompt("Digite o primeiro cpf:"),
+      //   prompt("Digite o segundo cpf:"),
+      //   prompt("Digite o terceiro cpf:"),
+      //   prompt("Digite o quarto cpf:"),
+      //   prompt("Digite o quinto cpf:"),
+      // ];
+
+      // console.log(cpfs);
+      // Validar cpf
+      // Se for valido ->
+      function formatacao(cpf) {
+        let format1 = cpf.slice(0, 3) + ".";
+        let format2 = cpf.slice(3, 6) + ".";
+        let format3 = cpf.slice(6, 9) + "-";
+        let format4 = cpf.slice(9);
+        cpf = format1 + format2 + format3 + format4;
+        return cpf;
+      }
+      // function validaListaCPF(...cpf) {
+      //   for (let i = 0; i < cpf.length; i++) {
+      //     if (cpf[i].length == 11 && !isNaN(cpf[i])) {
+      //       alert(formatacao(cpf[i]) + " Válido");
+      //     } else {
+      //       alert(cpf[i] + " Inválido");
+      //     }
+      //     console.log(cpf[i]);
+      //   }
+
+      // }
+      function validaListaCPF(...cpfs) {
+        for (let cpf of cpfs) {
+          if (cpf.length == 11 && !isNaN(cpf)) {
+            alert(formatacao(cpf) + " Válido");
+          } else {
+            alert(cpf + " Inválido");
+          }
+        }
+      }
+
+      (function () {
+        let listaCPF = [];
+        for (let i = 0; i < 5; i++) {
+          let cpf = prompt(`digite o ${i + 1}° cpf`);
+          listaCPF.push(cpf);
+        }
+        validaListaCPF(...listaCPF);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
