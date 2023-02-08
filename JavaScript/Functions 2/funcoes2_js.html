@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funções 2 - js intermediario</title>
     <script>
+      // FORMA DE RECEBER A LISTA DE CPFs
+
       // let listaCPF = [
       //   prompt("Digite o primeiro cpf:"),
       //   prompt("Digite o segundo cpf:"),
@@ -14,9 +16,7 @@
       //   prompt("Digite o quinto cpf:"),
       // ];
 
-      // console.log(cpfs);
-      // Validar cpf
-      // Se for valido ->
+      // FUNÇÃO PARA FORMATAR UM CPF, RECEBE UM DE CADA VEZ
       function formatacao(cpf) {
         let format1 = cpf.slice(0, 3) + ".";
         let format2 = cpf.slice(3, 6) + ".";
@@ -25,6 +25,9 @@
         cpf = format1 + format2 + format3 + format4;
         return cpf;
       }
+
+      // FORMA DE VALIDAR O CPF, CHAMAR A FUNÇÃO DE FORMATAÇÃO UTILIZANDO O "FOR" E ALERT PARA DEVOLVER O CPF FORMATADO E "VALIDADO"
+
       // function validaListaCPF(...cpf) {
       //   for (let i = 0; i < cpf.length; i++) {
       //     if (cpf[i].length == 11 && !isNaN(cpf[i])) {
@@ -34,8 +37,10 @@
       //     }
       //     console.log(cpf[i]);
       //   }
-
       // }
+
+      // FORMA DE VALIDAR O CPF E CHAMAR A FUNÇÃO DE FORMATAÇÃO UTILIZANDO O "FOR OF"
+
       function validaListaCPF(...cpfs) {
         for (let cpf of cpfs) {
           if (cpf.length == 11 && !isNaN(cpf)) {
@@ -45,6 +50,8 @@
           }
         }
       }
+
+      //FUNÇÃO ANÔNIMA PARA RECEBER A LISTA DE CPFs E CHAMAR A FUNÇÃO DE VALIDAÇÃO
 
       (function () {
         let listaCPF = [];
