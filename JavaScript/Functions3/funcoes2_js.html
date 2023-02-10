@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções 3 - js intermediario</title>
+    <script>
+      //Recebendo o valor do valor do salário
+      let salario = Number(prompt("Digite seu salario"));
+
+      // calculando porcentagem de imposto
+      function calculaImposto(valor) {
+        let porcentagem;
+        let aliquota;
+        if (valor <= 1903.98) {
+          return 0;
+        } else if (valor <= 2826.65) {
+          porcentagem = 0.075;
+          aliquota = 142.8;
+        } else if (valor <= 3751.05) {
+          porcentagem = 0.15;
+          aliquota = 354.8;
+        } else if (valor <= 4664.68) {
+          porcentagem = 0.225;
+          aliquota = 636.13;
+        } else {
+          porcentagem = 0.275;
+          aliquota = 869.36;
+        }
+        return valor * porcentagem - aliquota;
+      }
+      let Exibeimposto = (salario, desconto) => {
+        let valor = desconto(salario);
+        alert(`Será descontado do seu salário R$${valor.toFixed(2)}`);
+      };
+      Exibeimposto(salario, calculaImposto);
+    </script>
+  </head>
+  <body></body>
+</html>
