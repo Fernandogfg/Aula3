@@ -1,4 +1,4 @@
-let paragrafos = document.getElementsByTagName("p");
-for (let p of paragrafos) {
+let listaParagrafos = document.getElementsByTagName("p");
+for (let p of listaParagrafos) {
   console.log(p.outerText);
 }
