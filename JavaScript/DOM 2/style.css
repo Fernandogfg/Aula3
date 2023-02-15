@@ -1,0 +1,27 @@
+body {
+  padding: 0px 50px;
+  margin: 0px;
+  height: 100vh;
+  background-color: rgb(154, 154, 154);
+}
+.titulo {
+  width: 100%;
+  font-size: 2em;
+  
+}
+.conteudo {
+  width: 100%;
+  font-size: larger;
+  background-color: rgb(124, 124, 124);
+  color: white;
+  padding: 10px;
+}
+.rodape {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  background-color: red;
+  color: white;
+  width: 100%;
+  padding-left: 10px;
+}
