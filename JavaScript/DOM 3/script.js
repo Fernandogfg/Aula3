@@ -4,20 +4,20 @@ let cpf = document.getElementById('cpf')
 let btnValidar = document.getElementById('validar')
 let camposPreenchidos = function () {
     if (nome.value.trim() !== "" && sobrenome.value.trim() !== "" && cpf.value !== ""){
-        // alert ('Todos os campos foram preenchidos!')
+        alert ('Todos os campos foram preenchidos!')
         return true
     } else {
-        // alert('Por favor preencha todos os campos!')
+        alert('Por favor preencha todos os campos!')
         return false
     }
         
 }
 let validaCpf = function(){
     if(cpf.value.length == 11 && !isNaN(cpf.value)){
-        // alert('CPF digitado é valido')
+        alert('CPF digitado é valido')
        return true;
     }else {
-        // alert ('CPF digitado não é valido')
+        alert ('CPF digitado não é valido')
        return false;
     }
  }
