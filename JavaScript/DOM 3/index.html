@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#">
+      <div class="formulario">
+        <h2>Cadastro Simples</h2>
+        <div class="form-input">
+          <label for="nome" title="Insira seu primeiro nome">Nome</label>
+          <input type="text" placeholder="Seu Nome" id="nome"  title="Insira seu primeiro nome"/>
+        </div>
+        <div class="form-input">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" placeholder="Seu Sobrenome" id="sobrenome"  title="Insira seu sobrenome"/>
+        </div>
+        <div class="form-input">
+          <label for="cpf">CPF</label>
+          <input
+            type="number"
+            placeholder="Seu CPF (apenas numeros)"
+            id="cpf"
+            title="Insira seu CPF"
+          />
+        </div>
+
+        <button class="btn-validar" id="validar" title="Valide seus dados!">Validar</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
