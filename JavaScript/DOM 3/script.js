@@ -28,6 +28,4 @@ let validaCpf = function(){
         alert('Porfavor preencha os campos corretamente para enviar os dados')
     }
  }
-// btnValidar.onclick = camposPreenchidos
-// btnValidar.onclick = validaCpf
 btnValidar.onclick = msgSucesso
