@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 10px 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+#formulario {
+  display: grid;
+  justify-content: center;
+  color: white;
+}
+#formulario form {
+  width: max-content;
+  background-color: rgb(37, 66, 130);
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+h2 {
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+.form-input {
+  display: grid;
+}
+.form-input label {
+  margin: 0 0 6px 4px;
+}
+.form-input input {
+  height: 30px;
+  border-radius: 2px;
+  border: 0;
+  width: 25vw;
+  padding-left: 8px;
+}
+.form-input input:focus {
+  outline: 2px solid black;
+}
+#salvar {
+  background-color: white;
+  color: black;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#salvar:hover {
+  transition: 0.5s;
+  background-color: rgb(219, 214, 214);
+}
+h3 {
+  text-align: center;
+}
+#msg-erro {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  border-radius: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+#msg-erro p {
+  text-align: center;
+  line-height: 0px;
+}
+#msg-sucesso{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(23, 143, 69);
+  border-radius: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+#msg-sucesso p {
+  text-align: center;
+  line-height: 0px;
+}
+.inativo {
+  display: none;
+}

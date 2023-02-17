@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="formulario">
+      <form action="#">
+        <h2>Cadastro Simples</h2>
+
+        <div class="form-input">
+          <label for="nome1">Nome1</label>
+          <input type="text" id="nome1" placeholder="digite o Nome1" />
+        </div>
+
+        <div class="form-input">
+          <label for="nome2">Nome2</label>
+          <input type="text" id="nome2" placeholder="digite o Nome2" />
+        </div>
+
+        <div class="form-input">
+          <label for="nome3">Nome3</label>
+          <input type="text" id="nome3" placeholder="digite o Nome3" />
+        </div>
+        <button id="salvar">Salvar</button>
+        <div class="inativo" id="msg-erro">
+          <p>Por favor preencha todos os campos!!!</p>
+        </div>
+        <div class="inativo" id="msg-sucesso">
+          <p>Os nomes foram salvos com sucesso!!!</p>
+        </div>
+        <div id="lista-salvos">
+          <h3>Nomes Salvos</h3>
+        </div>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
