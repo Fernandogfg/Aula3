@@ -17,6 +17,7 @@ body {
   padding: 16px;
   display: grid;
   gap: 16px;
+  border-radius: 10px;
 }
 h2 {
   margin: 0 0 16px 0;
@@ -83,4 +84,7 @@ h3 {
 }
 .inativo {
   display: none;
+}
+h3 {
+  margin: 0;
 }

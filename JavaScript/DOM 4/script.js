@@ -53,7 +53,7 @@ function salvar() {
     limpaLista();
     preencheLista();
     enviaSucesso();
-    limpaCampos()
+    limpaCampos();
   } else {
     enviaErro();
   }
