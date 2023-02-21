@@ -29,7 +29,6 @@ function preencheLista() {
   cliente.emailCliente = email.value;
   cliente.telefoneCliente = tel.value;
   listaClientes.push(cliente);
-  console.log(listaClientes);
 }
 
 function msgError() {
