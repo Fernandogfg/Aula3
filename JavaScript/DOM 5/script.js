@@ -54,7 +54,7 @@ function exibeLista() {
       listaClientes[i].nomeCliente
     }</li><li>${listaClientes[i].emailCliente}</li><li>${
       listaClientes[i].telefoneCliente
-    }</li></ul></li></br>`;
+    }</li></ul></li></br></hr>`;
   }
   cadastradoClientes.setAttribute("class", "");
 }

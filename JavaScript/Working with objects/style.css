@@ -1,0 +1,16 @@
+table{
+    width: 100%;
+    border-collapse: separate;
+}
+th, td{
+    padding: 8px 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+th{
+    background-color: black;
+    color: white;
+}
+tr:nth-child(2n){
+    background-color: #bebbbb;
+}

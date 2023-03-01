@@ -26,6 +26,10 @@ h2 {
 .form-input {
   display: grid;
 }
+input.login:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  color: red;
+}
 .form-input label {
   margin: 0 0 6px 4px;
 }
@@ -35,6 +39,7 @@ h2 {
   border: 0;
   width: 25vw;
   padding-left: 8px;
+  color: black;
 }
 .form-input input:focus {
   outline: 2px solid black;
@@ -86,7 +91,7 @@ h2 {
   border-radius: 4px;
   padding: 5px;
 }
-#sucesso{
+#sucesso {
   background-color: rgb(59, 153, 0);
   color: white;
   font-size: larger;
