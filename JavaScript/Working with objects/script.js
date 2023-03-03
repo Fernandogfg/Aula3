@@ -33,7 +33,7 @@ const listaUsuarios = [
 
 let listarUsuario = function (lista) {
   let trTds = "";
-  lista.forEach(function (usuario) {
+  lista.forEach((usuario) => {
     trTds += `<tr><td>${usuario.id}</td><td>${usuario.nome}</td><td>${usuario.sexo}</td><td>${usuario.idade}</td><td>${usuario.email}</td></tr>`;
   });
   resultado.innerHTML = trTds;

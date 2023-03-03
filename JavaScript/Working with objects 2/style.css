@@ -1,0 +1,78 @@
+section {
+  display: grid;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 1) 40%,
+    rgba(112, 112, 116, 1) 100%
+  );
+  width: fit-content;
+  padding: 24px;
+  gap: 8px;
+}
+
+h2 {
+  margin: 0 0 15px 0;
+}
+
+#numero {
+  width: 20ch;
+}
+
+label {
+  margin-bottom: 4px;
+  font-size: larger;
+}
+
+input {
+  border-radius: 4px;
+  height: 40px;
+  font-size: x-large;
+  border: 0;
+  padding: 0 0 0 8px;
+}
+
+input:focus {
+  border: 0;
+  outline: 1px solid black;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#resultado {
+  font-size: larger;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.787);
+}
+
+#adicionar {
+  height: 32px;
+  width: fit-content;
+  background-color: rgb(5, 177, 5);
+  font-size: larger;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#adicionar:active {
+  background-color: rgb(7, 139, 14);
+}
+
+#limpar {
+  height: 32px;
+  background-color: rgb(239, 49, 49);
+  font-size: larger;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#limpar:active {
+  background-color: rgb(177, 6, 6);
+}
