@@ -18,14 +18,14 @@ function validaCampo (){
 function preencheCalculaLista (){
   listaNumeros.push(inputNumero.value)
   let listaCalculada = []
- listaNumeros.map((val, i, arr)=> listaCalculada.push(val * 3))
+ listaNumeros.map((val)=> listaCalculada.push(val * 3))
  listaExibida = [...listaCalculada]
  inputNumero.value = ''
 }
 
 function exibeResultado(){
   resultado.innerHTML = ''
-  listaExibida.map((val, i, arr) => resultado.innerHTML += `${val}, `) 
+  listaExibida.map((val) => resultado.innerHTML += `${val}, `) 
 }
 function limpaLista (){
   resultado.innerHTML = ''
