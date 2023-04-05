@@ -1,3 +1,3 @@
-export function calcular(valor, dataAtraso){
+export function Calcular(valor, dataAtraso){
 
 }
