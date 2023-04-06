@@ -1,12 +1,20 @@
+function criarContadorNumerico(n) {
+  return function () {
+    return n++;
+  };
+}
+
+const contador = criarContadorNumerico(1);
+
 class avaliacao {
   tipo = "";
   nota = 0;
   observacao = "";
   constructor(tipo) {
     this.tipo = tipo;
-   
   }
 }
+
 class aluno {
   nome = "";
   endereço = "";
@@ -14,19 +22,14 @@ class aluno {
   email = "";
   telefone = "";
   avaliacao = [];
-  #id = 0
+  #id = 0;
   constructor(nome) {
     this.nome = nome;
-  }
-
-  geraid(){
-    
-        return function () {
-          return this.#id = ++this.#id;
-        };
-      
+    this.#id = contador();
   }
 }
 
-const aluno1 = new aluno()
-console.log(aluno1);
+const novoAluno = new aluno("Fer");
+const novoAluno2 = new aluno("Jao");
+console.log(novoAluno);
+console.log(novoAluno2);
