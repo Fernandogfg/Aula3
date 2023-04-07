@@ -25,6 +25,9 @@ function criarContadorNumerico(n) {
     #id = 0;
     #idade;
     constructor(nome, dataNascimento) {
+        if(!dataNascimento){
+            throw new Error('Insira uma data de nascimento')
+        }
       this.nome = nome;
       this.#id = contador();
       this.data_nascimento = new Date(dataNascimento)
