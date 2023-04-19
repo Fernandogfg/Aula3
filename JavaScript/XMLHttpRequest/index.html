@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XMLHttpRequest</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <fieldset>
-      <label>CEP (zipcode)</label>
-      <input type="text" name="cep" id="cep" />
-    </fieldset>
-    <div id="loading" style="display: none">Carregando...</div>
-    <div id="message" style="display: none">CEP não encontrado</div>
-    <fieldset>Logradouro: <label id="logradouro"></label></fieldset>
-    <fieldset>Bairro: <label id="bairro"></label></fieldset>
-    <fieldset>UF: <label id="uf"></label></fieldset>
+    <div id="container">
+      <fieldset id="container-cep">
+        <label>CEP (zipcode)</label>
+        <input type="text" name="cep" id="cep" />
+      </fieldset>
+      <div id="loading" style="display: none">Carregando...</div>
+      <div id="message" style="display: none">CEP não encontrado</div>
+      <fieldset>Logradouro: <label id="logradouro"></label></fieldset>
+      <fieldset>Bairro: <label id="bairro"></label></fieldset>
+      <fieldset>UF: <label id="uf"></label></fieldset>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>

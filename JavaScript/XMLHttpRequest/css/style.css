@@ -1,0 +1,7 @@
+#container {
+  width: 30%;
+}
+#container-cep {
+  display: flex;
+  gap: 30px;
+}
