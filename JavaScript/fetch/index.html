@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js" defer></script>
     <title>Busca de Aluno</title>
   </head>
 
@@ -63,8 +62,18 @@
         </div>
         <input type="button" id="btnBuscar" value="Buscar" />
       </form>
-      <div id="dados"></div>
+      <div id="dados">
+       <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>matricula</th>
+            </tr>
+          </thead>
+          <tbody id="corpoDados"></tbody>
+        </table>
+      </div>
     </div>
-    <script src="js/main.js" type="module"></script>
+    <script src="js/busca.js" type="module"></script>
   </body>
 </html>
