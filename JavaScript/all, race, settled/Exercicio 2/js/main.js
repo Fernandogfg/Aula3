@@ -1,6 +1,6 @@
 import { EnviarMensagemServers, ProcessarArquivos } from "./fakeAPI.js";
 const files = []
-const processar = document.getElementById('processar')
+const btnProcessar = document.getElementById('processar')
 const selectArquivos = document.getElementById('arquivos')
 const totalAquivos = document.getElementById('totalArquivos')
 const totalSucesso = document.getElementById('totalArquivosSucesso')
@@ -17,20 +17,11 @@ files.forEach(x => {
     document.querySelector("#arquivos").appendChild(op)
 })
 
-processar.addEventListener('click', () => {
-    console.log(selectArquivos.selectedOptions);
-    // try{
-    //     if(selectArquivos.value.trim() == ''){
-    //         throw new Error('Selecione um arquivo!')
-    //     }else{
-    //         Promise.allSettled(EnviarMensagemServers()).then((results) => {
-    //             totalAquivos.innerHTML = results.length
-    //         })
-    //     }
-    // }catch(err){
-    //     alert(err)
-    // }
-    try{
-console.log(ProcessarArquivos(selectArquivos.selected))
-    }catch(err){}
+
+function enviarArquivos (){
+    // let arquivos = selectArquivos.selected
+    console.log(selectArquivos);
+}
+btnProcessar.addEventListener('click', function(){
+    enviarArquivos()
 })
