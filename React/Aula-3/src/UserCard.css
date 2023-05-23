@@ -1,0 +1,9 @@
+.usuario {
+  background-color: rgba(68, 0, 255, 0.164);
+  padding: 32px;
+  border-radius: 16px;
+}
+.premium {
+  color: rgb(0, 255, 13);
+  font-weight: bolder;
+}
