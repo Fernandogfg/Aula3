@@ -1,3 +1,7 @@
+vite.config.js
+package-lock.json
+.eslintrc.cjs
+/public
 # Logs
 logs
 *.log
