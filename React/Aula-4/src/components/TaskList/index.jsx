@@ -6,6 +6,7 @@ function TaskList() {
     { titulo: "Cozinhar", concluido: true },
     { titulo: "Levar cachorro pra passear", concluido: false },
   ];
+  
   return (
     <div className="taskList">
       <h2>Tasks</h2>
