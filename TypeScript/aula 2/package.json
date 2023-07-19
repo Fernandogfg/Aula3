@@ -1,0 +1,25 @@
+{
+  "name": "aula-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "system": "node dist/system.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "prompt-sync": "^4.2.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^20.4.2"
+  }
+}
